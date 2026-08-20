@@ -1,4 +1,4 @@
-ESTADO - 27/07/2026
+ESTADO - 20/08/2026
 
 CAPITULO ATUAL: 02 - Orientacao a Objetos (revisao antes de avancar)
 ULTIMA SESSAO: 27/07/2026 - formato 2h
@@ -36,7 +36,7 @@ PROJETO-LABORATORIO: sera a propria API de expedicao, depois que a v1 fechar.
 
 VETADO / PULADO:
 - Capitulo 3 (Collections/Streams) - adiado ate a fila do Cap.2 esvaziar.
-  TRAVA TEMPORAL: se em 2 semanas (ate 10/08) a fila nao esvaziar, avancar
+  TRAVA TEMPORAL: se em 2 semanas (ate 03/09) a fila nao esvaziar, avancar
   assim mesmo e manter os itens na recuperacao ativa de cada abertura.
 
 HABITOS ATIVOS:

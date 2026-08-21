@@ -1,45 +1,44 @@
-ESTADO - 20/08/2026
-
+ESTADO - 20/08/2026 (sessão 45min)
 CAPITULO ATUAL: 02 - Orientacao a Objetos (revisao antes de avancar)
-ULTIMA SESSAO: 27/07/2026 - formato 2h
-
+ULTIMA SESSAO: 20/08/2026 - formato 45min (esqueleto+super / ==vs.equals)
 FECHOU (passou no teste de saida):
-- (nada ainda no criterio rigoroso)
-
-FILA DE RECUPERACAO (por ordem de prioridade - teto: 5 itens):
-1. POO base (classe, construtor, encapsulamento) - consegue explicar, mas trava
-   para estruturar do zero. E a base dos itens 2 e 3: resolver primeiro.
-2. Heranca e polimorfismo (extends, super, override) - conceito a reconstruir
-3. Excecoes (try-catch, throw/throws, customizada) - conceito a reconstruir
-4. Pegadinhas do Cap.1 (divisao inteira, == vs equals, ArrayIndexOutOfBounds)
-
-REGRA DA FILA: se passar de 5 itens de forma persistente, o problema e ritmo,
-nao memoria - reduzir escopo por sessao em vez de estudar mais.
-
-EM ABERTO / TRAVADO:
-- Estruturacao de classe sem consulta: sabe a logica, mas nao monta o esqueleto
-  (abstrata + super no construtor + excecao estendendo Exception) de cabeca.
-  NAO e problema de decorar sintaxe - consultar assinatura de metodo e normal
-  e nao se resolve estudando mais. O alvo e o esqueleto, nao a grafia.
-  Em andamento: reescrever uma classe do zero no inicio de cada sessao.
-
-PROJETO DE EXERCICIO (Cap.2): sistema de pagamentos - Pagamento (abstrata),
+- Esqueleto de classe (abstrata + construtor nomeado + super no construtor
+  da subclasse) - fechou apos reescrever 3x, corrigindo: parenteses
+  indevido no nome da classe, "Super" com maiuscula, e falta do parametro
+  (int valor) na assinatura do construtor filho. Teste de saida (explicar
+  por que o parametro precisa ser declarado na assinatura) respondido
+  corretamente com palavras proprias.
+- super() - fechou junto com o item acima (mesma trava).
+- == vs .equals() em String - fechou. Reconstruiu corretamente com
+  analogia propria (endereco = casa, .equals = comparar conteudo da
+  casa). BONUS: entendeu tambem o String Pool (por que
+  String a="ana"; String b="ana"; da true no ==, mas new String("ana")
+  da false) - ponto que nem estava no roteiro original, adicionado por
+  duvida genuina do proprio aluno durante o teste de saida.
+  FILA DE RECUPERACAO (por ordem de prioridade - teto: 5 itens):
+1. Overload - conceito errado ("varias classes repetidas"). Correto: mesmo
+   metodo, mesma classe, parametros diferentes. Nao trabalhado nesta
+   sessao - segue pendente de reconstrucao.
+2. Heranca e polimorfismo (extends, override) - override respondeu certo
+   em sessao anterior, mas ainda sem teste de saida formal (escrever do
+   zero). Manter na fila.
+   REGRA DA FILA: 2/5 - fila esvaziou de 5 para 2. Folga real agora - pode
+   receber 1 item novo na proxima sessao sem estourar o teto.
+   EM ABERTO / TRAVADO:
+- Estruturacao de classe sem consulta - RESOLVIDO nesta sessao apos 3a
+  tentativa. Recomendacao: ainda pedir para reescrever do zero na abertura
+  de mais 1-2 sessoes para confirmar retencao antes de considerar
+  definitivamente consolidado (nao e so 1 acerto = dominio permanente).
+  PROJETO DE EXERCICIO (Cap.2): sistema de pagamentos - Pagamento (abstrata),
   PagamentoCartao, PagamentoPix, ValorInvalidoException, Main.
   PENDENTE: subir ao GitHub com README e commits.
-  Obs: e exercicio de fixacao, nao substitui o projeto do Cap.5.
-
-PROJETO DE PORTFOLIO (Cap.5, ainda nao iniciado): API de gestao de expedicao,
-  dominio logistico. Escopo: 1 funcionalidade primaria + ate 3 secundarias.
-
-PROJETO-LABORATORIO: sera a propria API de expedicao, depois que a v1 fechar.
-  Nao abrir uma terceira frente.
-
-VETADO / PULADO:
-- Capitulo 3 (Collections/Streams) - adiado ate a fila do Cap.2 esvaziar.
-  TRAVA TEMPORAL: se em 2 semanas (ate 03/09) a fila nao esvaziar, avancar
-  assim mesmo e manter os itens na recuperacao ativa de cada abertura.
-
-HABITOS ATIVOS:
+  PROJETO DE PORTFOLIO (Cap.5, ainda nao iniciado): API de gestao de expedicao.
+  VETADO / PULADO:
+- Capitulo 3 (Collections/Streams) - TRAVA TEMPORAL ate 03/09. Fila
+  esvaziou bem hoje - prazo parece viavel agora, mas overload e
+  heranca/polimorfismo ainda precisam de teste de saida formal antes
+  de considerar Cap.2 fechado de verdade.
+  HABITOS ATIVOS:
 - README caprichado em cada repo
-- Commit semantico; meta de 5 dias por semana (nao sequencia diaria)
+- Commit semantico; meta de 5 dias por semana
 - Relatorio de aprendizado ao fim da sessao
